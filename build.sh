@@ -3,6 +3,7 @@
 GNAT_INSTALL=~/opt/gnat
 
 INCLUDES=$(printf " -I%s " \
+	spikes \
 	utils \
 	utils/tests \
 	$GNAT_INSTALL/include/aunit \
@@ -11,5 +12,5 @@ INCLUDES=$(printf " -I%s " \
 if [ "$1" = "clean" ]; then
 	rm *.ali *.o b~* main
 else
-	$GNAT_INSTALL/bin/gnatmake -g -gnatyy $INCLUDES main
+	$GNAT_INSTALL/bin/gnatmake -g -gnaty -Wall $INCLUDES main
 fi
