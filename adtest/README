@@ -1,0 +1,8 @@
+A fully-featured test framework for GNAT
+
+# Principles
+
+* GNAT Centric: Takes advantage of the GNAT system including GNATColl.
+* Fully Featured: Should be usable for test suites, programs, and libraries that excersize the bounds of the ada language including exception handling, tasking, contracts, and dynamic dispatching. Usable for test applications that need to come out valgrind-clean and -gnaty/-Wall clean.
+* JUnit inspired: Uses the tried-and-true idioms of test fixtures, suites, runners, and reporters.
+* Memory 
